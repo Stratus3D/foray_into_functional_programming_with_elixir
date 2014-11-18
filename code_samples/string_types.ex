@@ -1,13 +1,8 @@
-# Strings and char lists
-"string" # string
-'char list' # char list
-
-# Strings are all encoded in UTF-8:
-"José" #=> "José"
+"José" #=> "José" - UTF-8 binary string
+'char list' #=> 'char list' - char list
 
 # `?a` returns the ASCII integer for the letter `a`
 ?a #=> 97
 
-# Strings are really binaries, and char lists are linked lists.
 <<?a, ?b, ?c>> #=> "abc"
 [?a, ?b, ?c]   #=> 'abc'
