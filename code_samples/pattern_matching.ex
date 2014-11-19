@@ -31,3 +31,20 @@ head #=> 1
 tail #=> [2,3]
 
 # Sixth slide
+# These are not parameters, they are patterns
+# evaluated if value passed in matches `0`
+def fib(0) do 0 end
+# evaluated if value passed in matches `1`
+def fib(1) do 1 end
+# evaluated if the first two clauses don't match
+def fib(n) do fib(n-1) + fib(n-2) end
+
+# Seventh slide
+case do_something(work) do
+  {:ok, result} -> # success
+    do_something_with_result(result)
+  {:error, :invalid_work} -> # special case
+    handle_invalid_work(error)
+  error -> # error
+    handle_error(error)
+end
