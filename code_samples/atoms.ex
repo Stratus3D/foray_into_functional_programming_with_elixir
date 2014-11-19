@@ -1,4 +1,4 @@
 # Atoms
-:hello
-# Atoms can be pattern matched
-:a = :a
+:hello_world
+:a
+true # boolean is also an atom
