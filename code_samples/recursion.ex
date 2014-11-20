@@ -7,6 +7,13 @@ def sum_list([], acc) do
   acc
 end
 
+def factoral(0) do
+  1
+end
+def factoral(number) do
+  factoral(number - 1) * number
+end
+
 # Implementation of reduce
 def reduce([], value, _) do
   value
