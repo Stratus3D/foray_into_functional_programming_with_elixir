@@ -33,13 +33,6 @@ second #=> 2
 {num, num} = {1, 2} #=> ** (MatchError) no match of right hand side value: {1, 2}
 
 # Sixth slide
-# It's common practice to assign a value to `_` if we don't need it
-{status, _} = {:error, :crashed}
-status #=> :error
-{status, _, _} = {:ok, [], []}
-status #=> :ok
-
-# Seventh slide
 username = "José"
 
 {:name, ^username} = {:name, "Joe"}
@@ -48,7 +41,7 @@ username = "José"
 {:name, ^username} = {:name, "José"}
 #=> {:name, "José"}
 
-# Eighth slide
+# Seventh slide
 # These are not parameters, they are patterns
 # evaluated if value passed in matches `0`
 def fib(0) do 0 end
@@ -57,7 +50,7 @@ def fib(1) do 1 end
 # evaluated if the first two clauses don't match
 def fib(n) do fib(n-1) + fib(n-2) end
 
-# Ninth slide
+# Eighth slide
 case do_something(work) do
   {:ok, result} -> # success
     do_something_with_result(result)
