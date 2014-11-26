@@ -40,6 +40,15 @@ status #=> :error
 status #=> :ok
 
 # Seventh slide
+username = “José”
+
+{:name, ^username} = {:name, "Joe"}
+#=> ** (MatchError) no match of right hand side value: {:name, "Joe"}
+
+{:name, ^username} = {:name, "José"}
+#=> {:name, “José”}
+
+# Eighth slide
 # These are not parameters, they are patterns
 # evaluated if value passed in matches `0`
 def fib(0) do 0 end
@@ -48,7 +57,7 @@ def fib(1) do 1 end
 # evaluated if the first two clauses don't match
 def fib(n) do fib(n-1) + fib(n-2) end
 
-# Eighth slide
+# Ninth slide
 case do_something(work) do
   {:ok, result} -> # success
     do_something_with_result(result)
