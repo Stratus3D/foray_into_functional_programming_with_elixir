@@ -10,8 +10,9 @@ Hello.greet("José") #=> "hello José
 
 # Third slide
 special_greeting = "hello everyone!"
+# Inherits scope creating closure
 greet = fn
-  "SunJUG" -> special_greet
+  "SunJUG" -> special_greeting
   name -> "hello" <> name
 end
 
