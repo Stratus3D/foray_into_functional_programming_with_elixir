@@ -13,7 +13,7 @@ special_greeting = "hello everyone!"
 # Inherits scope creating closure
 greet = fn
   "SunJUG" -> special_greeting
-  name -> "hello" <> name
+  name -> "hello " <> name
 end
 
 greet #=> #Function<6.90072148/1 in :erl_eval.expr/5>
