@@ -40,13 +40,13 @@ status #=> :error
 status #=> :ok
 
 # Seventh slide
-username = “José”
+username = "José"
 
 {:name, ^username} = {:name, "Joe"}
 #=> ** (MatchError) no match of right hand side value: {:name, "Joe"}
 
 {:name, ^username} = {:name, "José"}
-#=> {:name, “José”}
+#=> {:name, "José"}
 
 # Eighth slide
 # These are not parameters, they are patterns

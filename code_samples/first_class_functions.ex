@@ -1,7 +1,7 @@
 # Second slide
 defmodule Hello do
   def greet("SunJUG") do "hello everyone!" end
-  def greet(name) do "hello" <> name end
+  def greet(name) do "hello " <> name end
 end
 
 hello = &Hello.greet/1 #=> #Function<6.90072148/1 in :erl_eval.expr/5>
